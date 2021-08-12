@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5c6982"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="163.5dp"
+        android:id="@+id/linearLayout1"
+        android:gravity="center">
+        <TextView
+            android:text="Administración"
+            android:layout_width="361.0dp"
+            android:layout_height="59.0dp"
+            android:textAlignment="center"
+            android:id="@+id/textView1"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="16.5dp" />
+        <ImageButton
+            android:layout_width="59.5dp"
+            android:layout_height="45.0dp"
+            android:id="@+id/imageButton1"
+            android:layout_marginLeft="0.0dp"
+            android:background="@mipmap/orden"
+            android:layout_marginTop="6.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="309.0dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="27.5dp"
+        android:layout_marginLeft="25.0dp"
+        android:layout_marginRight="28.0dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="137.5dp"
+            android:id="@+id/linearLayout3">
+            <ImageButton
+                android:src="@android:drawable/ic_input_add"
+                android:layout_width="119.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton2"
+                android:layout_marginLeft="33.0dp"
+                android:background="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginTop="8.5dp" />
+            <ImageButton
+                android:layout_width="115.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton3"
+                android:layout_marginLeft="19.5dp"
+                android:background="@mipmap/licores"
+                android:layout_marginRight="0.0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="148.0dp"
+            android:id="@+id/linearLayout4"
+            android:layout_marginTop="13.5dp">
+            <ImageButton
+                android:layout_width="121.0dp"
+                android:layout_height="134.5dp"
+                android:id="@+id/imageButton4"
+                android:src="@android:drawable/ic_delete"
+                android:layout_marginLeft="35.5dp"
+                android:background="@android:drawable/divider_horizontal_textfield" />
+            <ImageButton
+                android:src="?android:attr/textColorPrimary"
+                android:layout_width="120.5dp"
+                android:layout_height="120.5dp"
+                android:id="@+id/imageButton5"
+                android:layout_marginLeft="11.5dp"
+                android:background="@mipmap/editar"
+                android:layout_marginTop="5.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

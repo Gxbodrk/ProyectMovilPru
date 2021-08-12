@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff215d71"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="520.5dp"
+        android:id="@+id/linearLayout5"
+        android:gravity="center"
+        android:padding="30px">
+
+        <TextView
+            android:text="COMPRAS"
+            android:layout_width="match_parent"
+            android:layout_height="92.5dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/textView1"
+            android:textStyle="bold|italic"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark" />
+        <TextView
+            android:text="SELECCIONE SU PEDIDO:"
+            android:layout_width="match_parent"
+            android:layout_height="91.0dp"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center" />
+        <Spinner
+            android:layout_width="260.0dp"
+            android:layout_height="70.0dp"
+            android:id="@+id/spinner1"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
+            android:gravity="center" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="68.0dp"
+            android:id="@+id/linearLayout1"
+            android:gravity="center">
+            <TextView
+                android:text="Producto:"
+                android:layout_width="110.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:layout_marginRight="9.0dp" />
+            <TextView
+                android:text="Precio:"
+                android:layout_width="111.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:layout_marginRight="5.5dp" />
+            <TextView
+                android:text="Cantidad:"
+                android:layout_width="96.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="82.0dp"
+            android:id="@+id/linearLayout2"
+            android:gravity="center">
+            <Spinner
+                android:layout_width="110.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner2"
+                android:background="@android:color/background_light"
+                android:layout_marginRight="15.0dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="100.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView6"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginRight="15.0dp" />
+            <NumberPicker
+                android:layout_width="110.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/numberPicker1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="61.0dp"
+            android:id="@+id/linearLayout4"
+            android:gravity="center"
+            android:layout_marginTop="32.5dp">
+            <Button
+                android:text="inicio"
+                android:layout_width="130.5dp"
+                android:layout_height="58.5dp"
+                android:id="@+id/button2"
+                android:textStyle="bold"
+                android:layout_marginRight="11.5dp" />
+            <Button
+                android:text="Ingresar compra"
+                android:layout_width="131.0dp"
+                android:layout_height="59.5dp"
+                android:id="@+id/button1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="6.5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

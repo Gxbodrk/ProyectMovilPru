@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ff1e727b">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="550.5dp"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center"
+        android:background="@drawable/errr"
+        android:layout_marginBottom="0.0dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="PRODUCTOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="60px"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="16.5dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="331.5dp"
+            android:layout_height="99.5dp"
+            android:id="@+id/linearLayout3"
+            android:layout_marginBottom="15.5dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame">
+            <TextView
+                
+                android:layout_width="70.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:background="@drawable/cgr_marlboro"
+                android:layout_marginRight="7.0dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout6">
+                <TextView
+                    android:text="Cigarrillos Marlboro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginBottom="10.0dp" />
+                <TextView
+                    android:text="Paquete Rojo "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:textColor="@android:color/background_light" />
+                <TextView
+                    android:text="x20 U"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox2" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="331.5dp"
+            android:layout_height="100.5dp"
+            android:id="@+id/linearLayout4"
+            android:layout_marginTop="0.0dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame">
+            <TextView
+                android:layout_width="78.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView6"
+                android:background="@drawable/licor_norteno" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout7">
+                <TextView
+                    android:text="Norteño"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6.5dp" />
+                <TextView
+                    android:text="Licor Agua Ardiente Noteño"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textColor="@android:color/background_light" />
+                <TextView
+                    android:text="375 ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="37.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox3"
+                android:layout_marginLeft="0.0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="63.5dp"
+            android:id="@+id/linearLayout8"
+            android:layout_marginTop="182.5dp"
+            android:gravity="center"
+            android:layout_marginBottom="0.0dp">
+            <Button
+                android:text="Cancelar"
+                android:layout_width="104.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button1"
+                android:layout_marginRight="11.0dp" />
+            <Button
+                android:text="Confirmar Productos "
+                android:layout_width="122.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button2"
+                android:layout_marginLeft="8.5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
