@@ -20,57 +20,49 @@ namespace ProyectMovil
             SetContentView(Resource.Layout.activity_main);
 
 
-            var usuario = FindViewById<EditText>(Resource.Id.editText1);
-            var pass = FindViewById<EditText>(Resource.Id.editText2);
-            var ingresar = FindViewById<Button>(Resource.Id.button1);
-            var registro = FindViewById<Button>(Resource.Id.button2);
+            var txt_usuario = FindViewById<EditText>(Resource.Id.editText1);
+            var txt_passw = FindViewById<EditText>(Resource.Id.editText2);
+            var btn_ingresar = FindViewById<Button>(Resource.Id.button1);
+            var btn_registro = FindViewById<Button>(Resource.Id.button2);
 
-            registro.Click += delegate
-            {
-                Intent intent = new Intent(this, typeof(Act_Registrar));
-                StartActivity(intent);
-            };
-
-
-
-
+            
             //Llamamos al boton para hacer la verificacion
-            ingresar.Click += delegate
+            btn_ingresar.Click += delegate
             {
                 //Validacion para q los campos no sean en blanco
-                if (usuario.Text == "" || pass.Text == "")
+                if (txt_usuario.Text == "" || txt_passw.Text == "")
                 {
                     //Muestra un mensaje en pantalla
                     Toast.MakeText(this, "Llene todos los campos por favor", ToastLength.Short).Show();
                     //Limpia los campos
-                    usuario.Text = "";
-                    pass.Text = "";
+                    txt_usuario.Text = "";
+                    txt_passw.Text = "";
                 }
-                else if (conex.ingresar(usuario.Text, pass.Text) != 1)
+                else if (conex.ingresar(txt_usuario.Text, txt_passw.Text) != 1)
                 {
 
                     //Muestra un mensaje en pantalla
                     Toast.MakeText(this, "Usuario no existe", ToastLength.Short).Show();
 
                     //Limpia los campos
-                    usuario.Text = "";
-                    pass.Text = "";
+                    txt_usuario.Text = "";
+                    txt_passw.Text = "";
                 }
                 //Si el usuario y contraseña son correctos ingresa al programa
-                else if (conex.ingresar(usuario.Text, pass.Text) == 1)
+                else if (conex.ingresar(txt_usuario.Text, txt_passw.Text) == 1)
                 {
-                    Intent intent = new Intent(this, typeof(Act_Inicio));
+                    Intent intent = new Intent(this, typeof(Act_InicioPrueb));
                     StartActivity(intent);
                     Toast.MakeText(this, "Ingreso Exitoso, Bienvenido", ToastLength.Short).Show();
-                    usuario.Text = "";
-                    pass.Text = "";
+                    txt_usuario.Text = "";
+                    txt_passw.Text = "";
                 }
                 else
                 {
                     Toast.MakeText(this, "Ingreso erronéo, intentelo de nuevo", ToastLength.Short).Show();
                 }
-                usuario.Text = "";
-                pass.Text = "";
+                txt_usuario.Text = "";
+                txt_passw.Text = "";
 
 
 
@@ -89,6 +81,11 @@ namespace ProyectMovil
 
             };
 
+            btn_registro.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(Act_Registrar));
+                StartActivity(intent);
+            };
 
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

@@ -25,7 +25,7 @@ namespace ProyectMovil
 
             btncancelar.Click += delegate
             {
-                Intent intent = new Intent(this, typeof(Act_Comprar));
+                Intent intent = new Intent(this, typeof(Act_InicioPrueb));
                 StartActivity(intent);
             };
         }
